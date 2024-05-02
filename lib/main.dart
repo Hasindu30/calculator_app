@@ -30,24 +30,25 @@ class _CalculatorState extends State<Calculator> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            SingleChildScrollView(
-              scrollDirection: Axis.vertical,
-              child: Row(
+               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Padding(padding: EdgeInsets.all(10.0),
                   child: Text('0',
                   textAlign:TextAlign.left,
-                  style: TextStyle(color: Colors.white),
-                  
-                  ),
-                  
-                  ),
-                  
-                  
+                  style: TextStyle(color: Colors.white,
+                  fontSize: 100
+                  ),     
+                  ),  
+                  ),  
                 ],
               ),
-            )
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  
+                ],
+              )
           ],
         ),
       ),
